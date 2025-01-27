@@ -12,6 +12,7 @@ import { fotos_machupichu } from '../lib/const';
         fotos_machupichu.map((foto) => {
           return (
             <section class='swiper-slide relative'>
+              <div class='absolute inset-0  bg-black/20  z-50' />
               <img
                 src={foto.imagen.src}
                 alt='Slide'
@@ -25,7 +26,7 @@ import { fotos_machupichu } from '../lib/const';
                   <h1 class='mt-4 text-5xl font-extrabold drop-shadow-lg tracking-wide'>
                     {foto.nombre}
                   </h1>
-                  <p class='mt-4 text-gray-200 text-lg leading-relaxed drop-shadow-sm'>
+                  <p class='mt-4 text-gray-200 text-2xl leading-relaxed drop-shadow-sm prose'>
                     {foto.descripcion}
                   </p>
                   <div class='mt-8 flex flex-wrap justify-center gap-4'>
