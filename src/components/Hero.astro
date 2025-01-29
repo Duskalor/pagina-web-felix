@@ -43,25 +43,6 @@ import { fotos_machupichu } from '../lib/const';
           );
         })
       }
-      <!-- 
-      <div class='swiper-slide'>
-        <img
-          src='https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500'
-          alt='Slide 2'
-        />
-      </div>
-      <div class='swiper-slide'>
-        <img
-          src='https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500'
-          alt='Slide 3'
-        />
-      </div>
-      <div class='swiper-slide'>
-        <img
-          src='https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500'
-          alt='Slide 4'
-        />
-      </div> -->
     </div>
     <div class='swiper-button-prev'></div>
     <div class='swiper-button-next'></div>
@@ -73,10 +54,10 @@ import { fotos_machupichu } from '../lib/const';
     import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
     new Swiper('.swiper', {
-      // autoplay: {
-      //   delay: 3000,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       loop: true,
       modules: [Navigation, Pagination, Autoplay],
       navigation: {
