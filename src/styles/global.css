@@ -1,2 +1,9 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
+
+body,
+:root,
+html {
+  font-family: 'Poppins', sans-serif;
+  color-scheme: dark;
+}

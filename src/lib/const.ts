@@ -5,28 +5,27 @@ import machu from '../assets/fotos/machu.jpg';
 export const fotos_machupichu = [
   {
     id: 1,
-    nombre: 'Machupichu',
+    nombre: 'Machu Picchu',
     descripcion:
-      'machupichu es un plato de comida de origen peruano, que se caracteriza por ser rico en proteínas y grasas, y por tener una textura suave y dulce. Machupichu es una comida popular en Perú y se utiliza en una variedad de platos, desde platos de comida rápida hasta platos de comida de alta calidad. Machupichu se puede comer en una variedad de formas, desde una taza de carne y frutas hasta una sopa de leche y huevos. Es una comida muy popular en Perú y se utiliza en una variedad de platos, desde platos de comida rápida hasta platos de comida de alta calidad.',
-
-    precio: 100,
-    imagen: machu,
+      'Machu Picchu, una de las maravillas del mundo, combina historia y naturaleza. Este sitio arqueológico, ubicado en Perú, es famoso por su impresionante arquitectura inca y sus vistas panorámicas a los Andes. Ideal para los amantes de la aventura y la cultura.',
+    precio: 150,
+    imagen: machu, // Asegúrate de tener esta variable definida con la ruta o import correspondiente.
   },
   {
     id: 2,
-    nombre: 'Machupichu',
+    nombre: 'Machu Picchu en la niebla',
     descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.',
-    precio: 100,
+      'Explora el encanto místico de Machu Picchu envuelto en niebla matutina. Esta experiencia única ofrece una conexión mágica con la historia y la belleza natural de los Andes peruanos.',
+    precio: 200,
     imagen: machupichu,
   },
   {
     id: 3,
-    nombre: 'Machupichu y la llama',
+    nombre: 'Machu Picchu y la llama',
     descripcion:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.',
-    precio: 100,
-    imagen: llama,
+      'Disfruta de la vista icónica de una llama pastando en las ruinas de Machu Picchu. Esta combinación de vida salvaje y arquitectura inca crea una escena inolvidable.',
+    precio: 180,
+    imagen: llama, // Asegúrate de que la variable llama esté definida correctamente.
   },
 ];
 
@@ -43,8 +42,8 @@ export const links = [
   },
   {
     id: 3,
-    nombre: 'Nosotros',
-    href: '/nosotros',
+    nombre: 'Sobre mí',
+    href: '/sobre-mi',
   },
   // {
   //   id: 4,
@@ -56,6 +55,17 @@ export const links = [
     nombre: 'Blog',
     href: '/blog',
   },
+];
+
+export const tourFeatureOptions = [
+  'Capture Every Moment',
+  'Share Your Adventure Instantly',
+  'Relive Your Journey with Highlight Reels',
+  'Access Travel Info On-the-Go',
+  'Multilingual Support & Accessibility Options',
+  'Your Comfort & Privacy Ensured',
+  'Immerse Yourself in Local Culture',
+  'Expert Guides & Local Insights',
 ];
 
 export const numero_contacto = '+51986154999';

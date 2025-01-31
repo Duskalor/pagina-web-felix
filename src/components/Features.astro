@@ -1,0 +1,139 @@
+---
+import { tourFeatureOptions } from '../lib/const';
+---
+
+<section class='md:px-6 container mx-auto py-12'>
+  <header
+    class='px-6 flex flex-col text-center items-center justify-center mb-4'
+  >
+    <div class='flex items-center gap-x-4'>
+      <h2 class='text-6xl font-bold py-5'>Powerful features for trips</h2>
+    </div>
+  </header>
+  <div class='max-w-screen-lg mx-auto flex flex-col items-center'>
+    <ul class='mt-10 grid md:grid-cols-2 sm:grid-cols-1 gap-x-4 gap-y-6'>
+      {
+        tourFeatureOptions.map((features) => (
+          <li class='flex items-center mb-2'>
+            <div class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'>
+              <svg
+                viewBox='0 0 24 24'
+                fill='none'
+                class='h-5 w-5 text-violet-500'
+              >
+                <path
+                  fill-rule='evenodd'
+                  clip-rule='evenodd'
+                  d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+                  fill='currentColor'
+                />
+              </svg>
+            </div>
+            <p class='text-base ml-4'>{features}</p>
+          </li>
+        ))
+      }
+      <!-- <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Easy sharing and embedding</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Trim and stitch video clips</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Download and upload</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Transcriptions and closed captions</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Video privacy controls</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Custom background</p>
+      </li>
+      <li class='flex items-center mb-2'>
+        <div
+          class='flex items-center bg-violet-100 h-9 w-9 rounded-full justify-center'
+        >
+          <svg viewBox='0 0 24 24' fill='none' class='h-5 w-5 text-violet-500'>
+            <path
+              fill-rule='evenodd'
+              clip-rule='evenodd'
+              d='M20.707 5.293a1 1 0 010 1.414l-11 11a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 15.586 19.293 5.293a1 1 0 011.414 0z'
+              fill='currentColor'></path>
+          </svg>
+        </div>
+        <p class='text-base ml-4'>Video and viewer insights</p>
+      </li> -->
+    </ul>
+  </div>
+  <!-- <div class='flex justify-center mt-6'>
+    <a class='font-bold underline' href='/pricing'>See all features</a>
+  </div> -->
+</section>
